@@ -1,4 +1,4 @@
-# My Kivy Smart Home App
+# Kivy Smart Home App
 
 ⚠️ This project is under development.
 
