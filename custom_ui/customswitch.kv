@@ -1,0 +1,122 @@
+<SwitchThumb>:
+    size_hint: None, None  
+    radius: self.width / 2 
+    ripple_scale: 2
+    size: self.parent.height * 0.9, self.parent.height * 0.9  
+    
+    
+    SwitchThumbIcon:
+        id: icon
+        size: self.parent.width * 0.6, self.parent.height * 0.6
+        pos_hint: {"center_x": .5, "center_y": .5}
+        theme_text_color: "Custom"
+        text_color:
+            ( \
+            ( \
+            ( \
+            root.parent.icon_active_color \
+            if root.parent.icon_active_color \
+            else self.theme_cls.onPrimaryContainerColor \
+            ) \
+            if root.parent.icon_active and root.parent.active else \
+            ( \
+            root.parent.icon_inactive_color \
+            if root.parent.icon_inactive_color \
+            else self.theme_cls.surfaceContainerHighestColor \
+            ) \
+            ) \
+            if not root.parent.disabled else \
+            ( \
+            self.theme_cls.onSurfaceColor[:-1] \
+            + [root.parent.switch_opacity_value_disabled_icon] \
+            if root.parent.icon_active else \
+            self.theme_cls.surfaceContainerHighestColor[:-1] \
+            + [root.parent.switch_opacity_value_disabled_icon] \
+            ) \
+            ) \
+            if root.parent else self.theme_cls.transparentColor
+
+    
+<CustomSwitch>:
+    size_hint: None, None  
+    size: dp(65), dp(35)  
+    radius: [self.height / 2]  
+    md_bg_color:
+        ( \
+        self.track_color_disabled \
+        if self.track_color_disabled else \
+        ( \
+        self.theme_cls.onSurfaceColor[:-1] \
+        + [self.switch_opacity_value_disabled_container] \
+        if self.active else self.theme_cls.surfaceContainerHighestColor[:-1] \
+        + [self.switch_opacity_value_disabled_container] \
+        ) \
+        ) \
+        if self.disabled else \
+        ( \
+        ( \
+        self.track_color_active \
+        if self.track_color_active else \
+        self.theme_cls.primaryColor \
+        ) \
+        if self.active else \
+        (self.track_color_inactive \
+        if self.track_color_inactive else \
+        self.theme_cls.surfaceContainerHighestColor \
+        ) \
+        )
+    line_color:
+        ( \
+        ( \
+        self.theme_cls.outlineColor if not self.active else self.md_bg_color
+        ) \
+        if not self.disabled else \
+        self.theme_cls.onSurfaceColor[:-1] \
+        + [self.switch_opacity_value_disabled_line] \
+        ) \
+        if self.theme_line_color == "Primary" else \
+        self._line_color if not self.disabled else \
+        ( \
+        self.line_color_disabled \
+        if self.line_color_disabled else \
+        self._line_color \
+        )
+
+    SwitchThumb:
+        id: thumb
+        size_hint: None, None  
+        on_size: self.size = self.parent.height * 0.9, self.parent.height * 0.9 # Dynamically adjust the thumb size
+        _no_ripple_effect: not root.ripple_effect
+        md_bg_color:
+            ( \
+            root.thumb_color_disabled \
+            if root.thumb_color_disabled else \
+            ( \
+            root.theme_cls.surfaceColor \
+            if root.active else root.theme_cls.onSurfaceColor[:-1] \
+            + [root.switch_thumb_opacity_value_disabled_container] \
+            ) \
+            ) \
+            if root.disabled else \
+            ( \
+            (root.thumb_color_active \
+            if root.thumb_color_active else \
+            root.theme_cls.onPrimaryColor \
+            ) \
+            if root.active else \
+            ( \
+            root.thumb_color_inactive \
+            if root.thumb_color_inactive else \
+            self.theme_cls.outlineColor \
+            ) \
+            )
+        on_touch_down:
+            if self.collide_point(*args[1].pos) and not root.disabled: \
+            root.on_thumb_down()
+        on_touch_up:
+            if self.collide_point(*args[1].pos) and not root.disabled: \
+            setattr(root, "active", not root.active)
+        pos:
+            root.pos[0] + ((root.active and root.width - self.width - dp(2)) or dp(2)) \
+            + dp(0 if root.icon_inactive else 0), \
+            root.pos[1] + self.height / 16.5

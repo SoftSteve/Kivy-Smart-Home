@@ -1,0 +1,15 @@
+{
+    "states": {
+        "Heat": true,
+        "Cool": false,
+        "Eco": false,
+        "Fan": false
+    },
+    "active": {
+        "Add thermostat screen": false,
+        "Thermostat On Screen": false
+    },
+    "temperature": {
+        "Thermostat1": 72
+    }
+}

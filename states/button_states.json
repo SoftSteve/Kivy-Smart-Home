@@ -1,0 +1,57 @@
+{
+    "All-Lights": {
+        "name": "All On",
+        "state": true,
+        "last_brightness": 0.8
+    },
+    "All-25": {
+        "name": "Dim 25%",
+        "state": true,
+        "last_brightness": 0.3
+    },
+    "All-50": {
+        "name": "Dim 50%",
+        "state": true,
+        "last_brightness": 0.55
+    },
+    "All-75": {
+        "name": "Dim 75%",
+        "state": true,
+        "last_brightness": 0.8
+    },
+    "uniqueID3": {
+        "name": "Living room",
+        "state": true,
+        "last_brightness": 0.8
+    },
+    "uniqueID1": {
+        "name": "Back patio",
+        "state": true,
+        "last_brightness": 0.8
+    },
+    "uniqueID20": {
+        "name": "Bedroom Lamp",
+        "state": true,
+        "last_brightness": 0.8
+    },
+    "uniqueID15": {
+        "name": "Amazon Basics",
+        "state": true,
+        "last_brightness": 0.8
+    },
+    "uniqueID12": {
+        "name": "Govee Smart",
+        "state": true,
+        "last_brightness": 0.8
+    },
+    "uniqueID8": {
+        "name": "Feit Electric",
+        "state": true,
+        "last_brightness": 0.8
+    },
+    "uniqueID6": {
+        "name": "GE Cync",
+        "state": true,
+        "last_brightness": 0.8
+    }
+}

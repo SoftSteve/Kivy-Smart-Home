@@ -1,0 +1,9 @@
+{
+    "states": {
+        "state": true
+    },
+    "active": {
+        "Lock On Screen": false,
+        "Add Lock screen": false
+    }
+}

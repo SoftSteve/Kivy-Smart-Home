@@ -1,0 +1,32 @@
+{
+    "Patio-Left": {
+        "name": "Back Patio-Left",
+        "state": false,
+        "blinds_start": 0.95
+    },
+    "Patio-Right": {
+        "name": "Back Patio-Right",
+        "state": false,
+        "blinds_start": 0.95
+    },
+    "t50%": {
+        "name": "Lower 50%",
+        "state": false,
+        "blinds_start": 0.95
+    },
+    "t75%": {
+        "name": "Lower 75%",
+        "state": true,
+        "blinds_start": 0.95
+    },
+    "tscd": {
+        "name": "Schedule",
+        "state": true,
+        "blinds_start": 0.95
+    },
+    "t100%": {
+        "name": "All Blinds",
+        "state": false,
+        "blinds_start": 0.95
+    }
+}

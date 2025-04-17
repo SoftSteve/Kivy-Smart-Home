@@ -1,0 +1,32 @@
+{
+    "Patio-Right": {
+        "name": "Back Patio-Right",
+        "state": false,
+        "fan_speed": 0.95
+    },
+    "Patio-Left": {
+        "name": "Back Patio-Left",
+        "state": false,
+        "fan_speed": 0.95
+    },
+    "All-Fans": {
+        "name": "All fans",
+        "state": false,
+        "fan_speed": 0.95
+    },
+    "scd": {
+        "name": "Schedule",
+        "state": true,
+        "fan_speed": 0.95
+    },
+    "75%": {
+        "name": "75% Speed",
+        "state": true,
+        "fan_speed": 0.95
+    },
+    "50%": {
+        "name": "50% Speed",
+        "state": true,
+        "fan_speed": 0.95
+    }
+}

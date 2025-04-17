@@ -1,0 +1,9 @@
+{
+    "active": {
+        "Weather On Screen": false,
+        "Add weather screen": false
+    },
+    "city": {
+        "zip_code": 17404
+    }
+}
