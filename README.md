@@ -1,6 +1,6 @@
 # My Kivy Smart Home App
 
-⚠️ This project is a work-in-progress.
+⚠️ This project is under development.
 
 A Python app built with Kivy for controlling lights, fans, blinds, and more in a smart home interface.
 
