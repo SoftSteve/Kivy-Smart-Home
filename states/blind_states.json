@@ -1,12 +1,12 @@
 {
     "Patio-Left": {
         "name": "Back Patio-Left",
-        "state": false,
+        "state": true,
         "blinds_start": 0.95
     },
     "Patio-Right": {
         "name": "Back Patio-Right",
-        "state": false,
+        "state": true,
         "blinds_start": 0.95
     },
     "t50%": {

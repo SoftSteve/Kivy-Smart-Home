@@ -19,15 +19,10 @@
         "state": true,
         "last_brightness": 0.8
     },
-    "uniqueID3": {
-        "name": "Living room",
-        "state": true,
-        "last_brightness": 0.8
-    },
     "uniqueID1": {
         "name": "Back patio",
         "state": true,
-        "last_brightness": 0.8
+        "last_brightness": 0.6799209755432931
     },
     "uniqueID20": {
         "name": "Bedroom Lamp",
@@ -51,7 +46,7 @@
     },
     "uniqueID6": {
         "name": "GE Cync",
-        "state": true,
+        "state": false,
         "last_brightness": 0.8
     }
 }

@@ -1,13 +1,13 @@
 {
     "Patio-Right": {
         "name": "Back Patio-Right",
-        "state": false,
-        "fan_speed": 0.95
+        "state": true,
+        "fan_speed": 0.8
     },
     "Patio-Left": {
         "name": "Back Patio-Left",
-        "state": false,
-        "fan_speed": 0.95
+        "state": true,
+        "fan_speed": 0.8
     },
     "All-Fans": {
         "name": "All fans",

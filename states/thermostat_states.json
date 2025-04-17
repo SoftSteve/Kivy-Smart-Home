@@ -9,7 +9,5 @@
         "Add thermostat screen": false,
         "Thermostat On Screen": false
     },
-    "temperature": {
-        "Thermostat1": 72
-    }
+    "temperature": {}
 }
